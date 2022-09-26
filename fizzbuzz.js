@@ -8,11 +8,17 @@ function fizzbuzz() {
     // Put your code here...
     for (let i = 1; i < 101; i++) {
 
-        if (i % 15 == 0) {console.log("FizzBuzz")}
+        let bang = "Bang"
+        let fizz = "Fizz"
+        let buzz = "Buzz"
 
-        else if (i % 3 == 0) {console.log("Fizz")}
+        if (i % 15 == 0) {console.log(fizz + buzz)}
 
-        else if (i % 5 == 0) {console.log("Buzz")}
+        else if (i % 3 == 0) {console.log(fizz)}
+
+        else if (i % 5 == 0) {console.log(buzz)}
+
+        else if (i % 7 == 0) {console.log(bang)}
 
         else {console.log(i)}
 
