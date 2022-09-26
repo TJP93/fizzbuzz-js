@@ -12,15 +12,18 @@ function fizzbuzz() {
         let fizz = "Fizz"
         let buzz = "Buzz"
 
-        if (i % 15 == 0) {console.log(fizz + buzz)}
+        let data = [];
 
-        else if (i % 3 == 0) {console.log(fizz)}
+        if (i % 3 == 0) {data.push(fizz)}
 
-        else if (i % 5 == 0) {console.log(buzz)}
+        if (i % 5 == 0) {data.push(buzz)}
 
-        else if (i % 7 == 0) {console.log(bang)}
+        if (i % 7 == 0) {data.push(bang)}
 
-        else {console.log(i)}
+        if (data.length == 0) 
+        
+        {console.log(i)}
+        else (console.log(data.join('')))
 
     }
     
