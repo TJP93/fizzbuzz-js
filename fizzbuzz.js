@@ -25,7 +25,9 @@ function fizzbuzz() {
 
         if (i % 11 == 0) {data = [bong]}
 
-        if (i % 13 == 0) {data.splice(1, 0, fezz)}
+        if (i % 13 == 0 && data.includes(buzz || bang)) {data.splice(1, 0, fezz)}
+       // if (i % 13 == 0 && data.includes(buzz || bang))
+        else if (data.length !== 0 && data.includes(bong)) {data.unshift(fezz)}
 
         if (i % 17 == 0) {data.reverse()}
 
