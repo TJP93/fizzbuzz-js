@@ -6,7 +6,7 @@ function fizzbuzz() {
     console.log('Welcome to FizzBuzz!');
 
     // Put your code here...
-    for (let i = 1; i < 255; i++) {
+    for (let i = 1; i < 256; i++) {
 
         let bang = "Bang"
         let fizz = "Fizz"
@@ -16,7 +16,6 @@ function fizzbuzz() {
 
         let data = [];
 
-        if (i % 13 == 0) {data.unshift(fezz)}
 
         if (i % 3 == 0) {data.push(fizz)}
 
@@ -25,6 +24,10 @@ function fizzbuzz() {
         if (i % 7 == 0) {data.push(bang)}
 
         if (i % 11 == 0) {data = [bong]}
+
+        if (i % 13 == 0) {data.splice(1, 0, fezz)}
+
+        if (i % 17 == 0) {data.reverse()}
 
         if (data.length == 0) 
         
