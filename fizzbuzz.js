@@ -11,6 +11,7 @@ function fizzbuzz() {
         let bang = "Bang"
         let fizz = "Fizz"
         let buzz = "Buzz"
+        
 
         let data = [];
 
